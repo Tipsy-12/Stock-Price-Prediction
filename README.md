@@ -1,28 +1,42 @@
-Overview
+# Stock Price and Volatility Forecasting: Time Series Analysis
 
-This project focuses on forecasting stock prices(Asian Paints,Tata Steel,Apple,etc) and modeling volatility using time series techniques. It combines ARIMA for stock price prediction and GARCH for volatility forecasting. The workflow includes exploratory data analysis, stationarity testing, model optimization, and walk-forward validation for robust forecasting.
+## Overview
 
-Key Highlights
+This project applies advanced time series models to forecast stock prices and estimate market volatility. Using historical stock data, the analysis focuses on capturing both price trends and volatility dynamics using a combination of ARIMA and GARCH models.
 
-1. Conducted exploratory data analysis to understand trends and volatility behavior in stock data.
+## Key Highlights
 
-2. Tested for stationarity using the Augmented Dickey-Fuller (ADF) Test.
+- 📊 **Exploratory Data Analysis (EDA):**  
+  Visualized stock prices and returns to identify trends, seasonality, and volatility clusters.
 
-3. Built and optimized an ARIMA model for time series forecasting of stock prices.
+- 🔍 **Stationarity Testing:**  
+  Applied the **Augmented Dickey-Fuller (ADF)** test to assess and transform the time series into a stationary process suitable for modeling.
 
-4. Applied a GARCH model to capture time-varying volatility and volatility clustering.
+- 📈 **Modeling Techniques:**  
+  - **ARIMA (AutoRegressive Integrated Moving Average)** was used for stock price prediction.  
+  - **GARCH (Generalized Autoregressive Conditional Heteroskedasticity)** was used for modeling and forecasting volatility.
 
-5. Performed walk-forward validation to evaluate model performance over rolling time windows.
+- 🔁 **Walk-Forward Validation:**  
+  Implemented to evaluate model performance on rolling time windows, ensuring robust and realistic forecasting results.
 
-Results
+## Results
 
-1. ARIMA effectively captured short-term price dynamics.
+- Successfully captured key price and volatility dynamics in the data.
+- ARIMA provided reasonable short-term forecasts for stock prices.
+- GARCH effectively modeled volatility clustering and variance shifts.
 
-2. GARCH successfully modeled periods of high and low volatility.
+## Tools & Libraries
 
-3. Walk-forward validation ensured robust and realistic forecasts.
+- Python  
+- `pandas`, `numpy`, `matplotlib`, `statsmodels`, `arch`
 
+## Conclusion
 
-Conclusion
+The project demonstrates a complete time series forecasting workflow, integrating ARIMA and GARCH models for price and volatility analysis. The approach is suitable for financial time series where capturing both trend and risk is crucial.
 
-This project demonstrates a complete pipeline for financial time series forecasting. By integrating ARIMA and GARCH models, it addresses both trend forecasting and risk modeling. The approach is well-suited for analyzing real-world stock data where volatility and trend co-exist.
+## Future Work
+
+- Explore multivariate models like VAR or multivariate GARCH.
+- Incorporate exogenous variables (e.g., macroeconomic indicators).
+- Extend to portfolio-level volatility modeling.
+
